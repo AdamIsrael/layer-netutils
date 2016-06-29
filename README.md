@@ -13,7 +13,7 @@ $ juju deploy cs:~aisrael/trusty/netutils
 To run an action:
 ```bash
 $ juju run-action netutils/0 ping destination=google.com
-$ juju run-action netutils/0 ping destination=google.com
+$ juju run-action netutils/0 traceroute destination=google.com
 ```
 
 To fetch the output of an action:
