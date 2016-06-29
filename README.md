@@ -50,10 +50,8 @@ With great scalability comes great power, but please don't use this to DDoS anyo
 Though this will be listed in the charm store itself don't assume a user will
 know that, so include that information here:
 
-## Upstream Project Name
+## Contributing to the charm
 
-  - [netutils charm](https://www.jujucharms.com/u/aisrael/netutils)
-  - [layer-netutils](https://www.github.com/AdamIsrael/layer-netutils/)
-  - [Upstream bug tracker](https://www.github.com/AdamIsrael/layer-netutils/issues)
-  - Upstream mailing list or contact information
-  - Feel free to add things if it's useful for users
+  - The compiled charm can be found [here](https://www.jujucharms.com/u/aisrael/netutils).
+  - [layer-netutils](https://www.github.com/AdamIsrael/layer-netutils/) contains the source of the layer.
+  - Please add any bugs or feature requests to the [issue tracker](https://www.github.com/AdamIsrael/layer-netutils/issues).
