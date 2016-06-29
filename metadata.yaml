@@ -1,10 +1,12 @@
 name: netutils
-summary: <Fill in summary here>
+summary: A suite of network-related utilities.
 maintainer: Adam Israel <adam.israel@canonical.com>
 description: |
-  <Multi-line description here>
+  A suite of network-related utilities, such as ping and traceroute, that
+  can be deployed into a data center in order to diagnose connectivity issues.
 tags:
-  # Replace "misc" with one or more whitelisted tags from this list:
   # https://jujucharms.com/docs/stable/authors-charm-metadata
-  - misc
+  - ops
+  - network
+  - performance
 subordinate: false
