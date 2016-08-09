@@ -9,4 +9,7 @@ tags:
   - ops
   - network
   - performance
+series:
+  - trusty
+  - xenial
 subordinate: false
