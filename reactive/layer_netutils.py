@@ -17,11 +17,32 @@ from charms.reactive import (
 import subprocess
 
 
+@when_not('netutils.ready')
+def ready():
+    status_set('active', 'Ready!')
+    set_flag('netutils.ready')
+
+
+@when('actions.nmap')
+def nmap():
+    err = ''
+    try:
+        result, err = _run('nmap {}'.format(action_get('destination')))
+    except:
+        action_fail('nmap command failed:' + err)
+    else:
+        action_set({'outout': result})
+    finally:
+        remove_flag('actions.nmap')
+
+
 @when('actions.ping')
 def ping():
     err = ''
     try:
-        result, err = _run('ping -qc {} {}'.format(action_get('count'), action_get('destination')))
+        result, err = _run('ping -qc {} {}'.format(
+            action_get('count'), action_get('destination'))
+        )
 
     except:
         action_fail('ping command failed:' + err)

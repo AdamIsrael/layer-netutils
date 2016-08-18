@@ -1,3 +1,11 @@
+nmap:
+  description: "nmap a thing!"
+  params:
+    destination:
+      description: "destination to scan"
+      type: string
+  required:
+    - destination
 ping:
   description: 'ping a thing!'
   params:

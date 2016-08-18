@@ -4,3 +4,4 @@ options:
   basic:
     packages:
       - traceroute
+      - nmap
